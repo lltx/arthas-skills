@@ -1,5 +1,5 @@
 ---
-name: arthas-mcp-server
+name: arthas-skills
 description: Use this skill when diagnosing Java applications with Arthas through the arthas-mcp-server, including thread analysis, hot methods, exceptions, class inspection, method tracing, watch/stack/monitor workflows, or when the user asks to use Arthas or Arthas MCP. This skill connects to a fixed streamable HTTP MCP endpoint at http://localhost:8563/mcp.
 ---
 
