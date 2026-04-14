@@ -1,0 +1,15 @@
+interface:
+  display_name: "Arthas MCP"
+  short_description: "Diagnose Java apps through Arthas MCP"
+  default_prompt: "Use $arthas-mcp-server to inspect a Java application with Arthas MCP and guide the diagnosis safely."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "arthas-mcp"
+      description: "Fixed Arthas MCP endpoint"
+      transport: "streamable_http"
+      url: "http://localhost:8563/admin/mcp"
+
+policy:
+  allow_implicit_invocation: true

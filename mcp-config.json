@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "arthas-mcp": {
+      "type": "streamableHttp",
+      "url": "http://localhost:8563/admin/mcp"
+    }
+  }
+}
