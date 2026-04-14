@@ -1,30 +1,20 @@
 # arthas-skills
 
-Arthas MCP skill for diagnosing Java applications through a fixed streamable HTTP MCP endpoint.
+`arthas-skills` 是一个面向 Arthas MCP 的 Skills，帮助 AI 在排查 Java 应用问题时，按固定的 MCP 地址连接 Arthas，并用更稳定的方式完成诊断。
 
-## Files
 
-- `SKILL.md`: skill definition and operating rules
-- `executor.py`: local executor for listing, describing, and calling MCP tools
-- `mcp-config.json`: MCP server configuration
-- `references/arthas-workflows.md`: troubleshooting workflows and reporting guidance
+## 如何安装
 
-## Usage
-
-List tools:
+如果这个 Skills 已经发布在 Git 仓库中，可以直接用下面的方式安装：
 
 ```bash
-python executor.py --list
+npx skills add https://github.com/lltx/arthas-skills.git
 ```
 
-Describe one tool:
+## 安装后验证
+
+进入 CodeX
 
 ```bash
-python executor.py --describe TOOL_NAME
-```
-
-Call one tool:
-
-```bash
-python executor.py --call '{"tool":"TOOL_NAME","arguments":{"key":"value"}}'
+$arthas-skills 看一下我的应用的 JVM 占用情况，提供一个分析报告
 ```
