@@ -18,3 +18,5 @@ npx skills add https://github.com/lltx/arthas-skills.git
 ```bash
 $arthas-skills 看一下我的应用的 JVM 占用情况，提供一个分析报告
 ```
+
+![](https://minio.pigx.vip/oss/202604/skill-test.gif)
